@@ -69,9 +69,9 @@ public class App {
 		return x;
 	}
 }
+```
 Above implementation have runtime complexity of O(n) and space complexity of O(1)
 ```
 Runtime Complexity = O(n)
 Space Complexity   = O(1)
-```
 ```
