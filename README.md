@@ -16,7 +16,7 @@ Input: [4,1,2,1,2]
 Output: 4
 ```
 
-### Implementation
+### Implementation 1 :
 
 ```java
 import java.util.HashSet;
@@ -49,4 +49,29 @@ Above implementation have runtime complexity of O(n) and space complexity of O(n
 ```
 Runtime Complexity = O(n)
 Space Complexity   = O(n)
+```
+
+### Implementation 2 :
+
+```java
+public class App {
+
+	public static void main(String[] args) {
+		int[] nums = { 2, 1, 2};
+		System.out.println(singleNumber(nums));
+	}
+	
+	public static int singleNumber(int[] nums) {
+		int x = 0;
+		for (int i : nums) {
+			x = x ^ i;
+		}
+		return x;
+	}
+}
+Above implementation have runtime complexity of O(n) and space complexity of O(1)
+```
+Runtime Complexity = O(n)
+Space Complexity   = O(1)
+```
 ```
